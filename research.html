@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Research by Alberto Sergio on electricity markets, power-plant reliability, climate risks and cross-border electricity trade.">
+  <title>Research | Alberto Sergio</title>
+
+  <style>
+    :root {
+      --ink: #263238;
+      --muted: #59656c;
+      --accent: #205b70;
+      --line: #dde4e7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: #102f3b; }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    nav {
+      border-bottom: 1px solid var(--line);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    nav .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 64px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+      line-height: 1.35;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 32px 0 24px;
+    }
+
+    h3 {
+      font-size: 21px;
+      margin: 0 0 10px;
+    }
+
+    p { margin: 0 0 16px; }
+
+    aside {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .name {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 35px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    .name a {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .role {
+      font-size: 16px;
+      color: var(--ink);
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-bottom: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    article {
+      padding-bottom: 28px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .authors,
+    .publication {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .authors { color: var(--muted); }
+
+    .paper-links {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    details { margin-top: 14px; }
+
+    summary {
+      width: fit-content;
+      cursor: pointer;
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    details p {
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 35px;
+      }
+
+      aside {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 25px;
+      }
+
+      .container {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .name { font-size: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html">About</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container layout">
+    <aside aria-label="Profile">
+      <p class="name">
+        <a href="index.html">Alberto Sergio</a>
+      </p>
+
+      <p class="role">PhD Student in Economics</p>
+
+      <p>
+        Department of Economics<br>
+        Swedish University of Agricultural Sciences<br>
+        Uppsala, Sweden
+      </p>
+
+      <p>
+        Energy economics<br>
+        Electricity markets<br>
+        Environmental economics<br>
+        Applied econometrics
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:alberto.sergio@slu.se">
+          alberto.sergio@slu.se
+        </a><br>
+        <a href="https://www.linkedin.com/in/alberto-sergio-48379420a/">
+          LinkedIn
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Research</h1>
+
+      <section aria-labelledby="publications">
+        <h2 id="publications">Publications</h2>
+
+        <article>
+          <h3>
+            Weather-Induced Power Plant Outages: Empirical
+            Evidence from Hydro and Thermal Generators in Europe
+          </h3>
+
+          <p class="authors">
+            Alberto Sergio and Francesco Pietro Colelli
+          </p>
+
+          <p class="publication">
+            <em>Energy Economics</em>, 148, 108549, 2025.
+          </p>
+
+          <p>
+            How does weather affect the reliability of
+            European power plants?
+          </p>
+
+          <p class="paper-links">
+            <a href="https://doi.org/10.1016/j.eneco.2025.108549">
+              Published article
+            </a>
+          </p>
+
+          <details>
+            <summary>Research summary</summary>
+            <p>
+              We combine power-plant outage records from ENTSO-E
+              with local weather data across 20 European countries.
+              Using econometric models, we examine how temperature
+              and hydrological conditions affect outages at hydro
+              and thermal generators. The study considers
+              differences across generation technologies and
+              between planned and forced outages, providing
+              evidence on weather-related risks to electricity
+              generation.
+            </p>
+          </details>
+        </article>
+      </section>
+
+      <section aria-labelledby="ongoing">
+        <h2 id="ongoing">Working papers and work in progress</h2>
+
+        <article>
+          <h3>
+            Under Strain: Projecting Climate-Induced Capacity
+            Losses for European Thermal Power Plants
+          </h3>
+
+          <p class="authors">
+            Alberto Sergio and Francesco Pietro Colelli
+          </p>
+
+          <p>
+            How could climate change affect thermal generation
+            availability across Europe?
+          </p>
+
+          <details>
+            <summary>Research summary</summary>
+            <p>
+              We link empirical estimates of weather-related
+              power-plant unavailability to CMIP6 climate
+              projections. The analysis distinguishes the
+              probability of an outage from the share of
+              capacity lost when one occurs. We examine how
+              projected losses vary across technologies,
+              countries and seasons, and whether losses may
+              occur simultaneously across countries. This
+              matters for the availability of generation
+              and the potential for neighbouring systems
+              to provide support.
+            </p>
+          </details>
+        </article>
+
+        <article>
+          <h3>
+            When Nuclear Falters: Electricity Trade, Gas Prices,
+            and Energy Security in France
+          </h3>
+
+          <p class="authors">
+            Alberto Sergio, Anna Alberini and
+            Francesco Pietro Colelli
+          </p>
+
+          <p>
+            How did electricity trade shape the effects of
+            France’s nuclear shortfall?
+          </p>
+
+          <details>
+            <summary>Research summary</summary>
+            <p>
+              We study France’s nuclear shortfall during the
+              European energy crisis using hourly data on
+              electricity prices, generation, demand and
+              cross-border exchanges. The analysis combines
+              instrumental-variable models with counterfactual
+              scenarios and machine-learning predictions.
+              We examine how trade helped France respond to
+              reduced nuclear availability and how the effects
+              were transmitted to neighbouring electricity
+              markets, alongside changes in gas prices.
+            </p>
+          </details>
+        </article>
+
+        <article>
+          <h3>
+            Dunkelflauten vs. Abundant Renewables: What Are
+            the Effects on Electricity Prices and Trade?
+          </h3>
+
+          <p class="authors">
+            Alberto Sergio and Anna Alberini
+          </p>
+
+          <p>
+            What happens to prices and electricity trade when
+            wind and solar generation are scarce or abundant?
+          </p>
+
+          <details>
+            <summary>Research summary</summary>
+            <p>
+              We use hourly data across European electricity
+              markets to examine periods of low and high
+              wind and solar generation. The project studies
+              how these conditions affect electricity prices
+              and cross-border trade, and how the response
+              depends on generation availability at home and
+              in neighbouring markets. Particular attention
+              is given to the role of interconnection and
+              dispatchable generation during renewable
+              scarcity.
+            </p>
+          </details>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">© 2026 Alberto Sergio</div>
+  </footer>
+</body>
+</html>
