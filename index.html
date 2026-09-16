@@ -6,178 +6,14 @@
   <meta name="description"
         content="Alberto Sergio — PhD student in Economics at SLU. Research on electricity markets, energy security and climate risks to power generation.">
   <title>Alberto Sergio | Energy Economics</title>
-
-  <style>
-    :root {
-      --ink: #263238;
-      --muted: #59656c;
-      --accent: #205b70;
-      --line: #dde4e7;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: #fff;
-      color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-
-    a:hover { color: #102f3b; }
-
-    a:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 4px;
-    }
-
-    .container {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 28px;
-    }
-
-    nav {
-      border-bottom: 1px solid var(--line);
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-
-    nav .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 28px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--muted);
-    }
-
-    .layout {
-      display: grid;
-      grid-template-columns: 260px minmax(0, 1fr);
-      gap: 64px;
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    h1, h2, h3 {
-      font-weight: normal;
-      line-height: 1.3;
-    }
-
-    h1 {
-      font-size: 35px;
-      margin: 0 0 14px;
-    }
-
-    h2 {
-      font-size: 27px;
-      margin: 0 0 20px;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin: 0 0 8px;
-    }
-
-    p { margin: 0 0 18px; }
-
-    aside {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    aside h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--ink);
-    }
-
-    .role {
-      font-size: 16px;
-      color: var(--ink);
-    }
-
-    .contact-links a {
-      display: inline-block;
-      margin-bottom: 8px;
-      overflow-wrap: anywhere;
-    }
-
-    section {
-      margin-bottom: 42px;
-      scroll-margin-top: 24px;
-    }
-
-    .section-label {
-      margin: 26px 0 20px;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    article {
-      margin-bottom: 25px;
-      padding-bottom: 25px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    article p {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-    .authors {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    footer {
-      padding: 22px 0;
-      border-top: 1px solid var(--line);
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    @media (max-width: 760px) {
-      .layout {
-        grid-template-columns: 1fr;
-        gap: 35px;
-        padding-top: 35px;
-      }
-
-      aside {
-        border-bottom: 1px solid var(--line);
-        padding-bottom: 25px;
-      }
-
-      .container { padding-left: 22px; padding-right: 22px; }
-      h1 { font-size: 32px; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <nav aria-label="Main navigation">
     <div class="container">
-      <a href="#about">About</a>
+      <a class="brand" href="index.html">Alberto Sergio</a>
+      <a href="index.html" aria-current="page">About</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching &amp; Service</a>
       <a href="presentations.html">Presentations</a>
@@ -189,12 +25,12 @@
   <div class="container layout">
     <aside aria-label="Profile">
       <img
-  src="profile.jpeg"
-  alt="Alberto Sergio"
-  width="220"
-  style="display: block; width: 100%; max-width: 220px;
-         height: auto; border-radius: 4px; margin-bottom: 22px;"
->
+        class="profile-photo"
+        src="profile.jpeg"
+        alt="Alberto Sergio"
+        width="240"
+      >
+
       <h1>Alberto Sergio</h1>
       <p class="role">PhD Student in Economics</p>
 
@@ -204,25 +40,26 @@
         Uppsala, Sweden
       </p>
 
-      <p>
-        Energy economics<br>
-        Electricity markets<br>
-        Applied econometrics
-      </p>
-
       <div class="contact-links" id="contact">
         <a href="mailto:alberto.sergio@slu.se">
           alberto.sergio@slu.se
-        </a><br>
-        <a href="https://www.linkedin.com/in/alberto-sergio-48379420a/">
-          LinkedIn
         </a>
+
+        <div class="profile-actions">
+          <a class="button primary" href="Alberto_Sergio_CV.pdf">
+            Download CV
+          </a>
+          <a class="button"
+             href="https://www.linkedin.com/in/alberto-sergio-48379420a/">
+            LinkedIn
+          </a>
+        </div>
       </div>
     </aside>
 
     <main>
-      <section id="about">
-        <h2>About</h2>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
 
         <p>
           I’m a PhD student in Economics at the Swedish University
@@ -246,6 +83,54 @@
           renewable generation affect electricity prices, and the
           role of cross-border trade in responding to these changes.
         </p>
+      </section>
+
+      <section aria-labelledby="interests-title">
+        <h2 id="interests-title">Research interests</h2>
+
+        <ul class="interests">
+          <li>
+            <strong>Generation reliability</strong>
+            Weather-related outages and climate risks to power generation.
+          </li>
+          <li>
+            <strong>Electricity markets</strong>
+            Prices, renewable variability and nuclear availability.
+          </li>
+          <li>
+            <strong>Energy security</strong>
+            Cross-border trade and simultaneous generation shortfalls.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="publication-title">
+        <h2 id="publication-title">Featured publication</h2>
+
+        <div class="featured">
+          <h3>
+            Weather-Induced Power Plant Outages: Empirical
+            Evidence from Hydro and Thermal Generators in Europe
+          </h3>
+
+          <p class="authors">With Francesco Pietro Colelli</p>
+          <p class="publication">
+            <em>Energy Economics</em>, 148, 108549 (2025).
+          </p>
+
+          <p>
+            We examine how weather affects outages at hydro
+            and thermal power plants across 20 European countries.
+          </p>
+
+          <p class="paper-links">
+            <a href="https://doi.org/10.1016/j.eneco.2025.108549">
+              Read the article
+            </a>
+            &nbsp;·&nbsp;
+            <a href="research.html">All research</a>
+          </p>
+        </div>
       </section>
     </main>
   </div>
